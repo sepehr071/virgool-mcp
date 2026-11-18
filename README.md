@@ -88,10 +88,6 @@ Real answer (18 Nov 2026): `vg_search(query="هوش مصنوعی")` found 1000 p
 - Publications on a custom domain (for example neshan.blog) answer through their `virgool.ir/<name>` address; one such page did not finish loading in Chrome during checks, so its post list was checked against the API only.
 - An author's lists tab, drafts, bookmarks and anything behind a login are not covered.
 
-## How it works
-
-Virgool has no public API documentation. The endpoints were mapped by watching virgool.ir in Chrome, and every tool was then checked in Chrome against the real rendered pages (posts, comments, search, authors, feeds, topics, tags, publications) on 18 Nov 2026. A post's text is read from the post page. The server calls those same public endpoints through a Chrome-impersonating HTTP client, with a short cache and at most two requests at a time.
-
 ## فارسی
 
 <div dir="rtl">
